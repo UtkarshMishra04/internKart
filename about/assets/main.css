@@ -296,9 +296,9 @@ header {
       position: absolute;
       top: 0;
       left: 125px;
-      background: #590799;
-      background: -webkit-linear-gradient(180deg, #590799 80%, #fff 97%);
-      background: linear-gradient(180deg, #590799 80%, #fff 97%);
+      background: #FFD037;
+      background: -webkit-linear-gradient(180deg, #FFD037 80%, #fff 97%);
+      background: linear-gradient(180deg, #FFD037 80%, #fff 97%);
       width: 5px;
       height: 100%; }
   .syllabus li {
@@ -323,7 +323,7 @@ i.circle {
   height: 25px;
   border-radius: 25px;
   background: #fff;
-  border: 5px solid #590799; }
+  border: 5px solid #FFD037; }
 
 .syllabus ul h1 {
   vertical-align: top;
@@ -767,7 +767,7 @@ body {
   top: -0.8px;
   margin: 0 3px;
   font-size: 24px !important;
-  color: #590799; }
+  color: #009F79; }
 
 .testimonial-column {
   display: inline-block;
