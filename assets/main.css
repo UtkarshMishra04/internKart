@@ -38,16 +38,18 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  outline: none; }
+  outline: none;
+  text-decoration: none; }
 
 a {
-  color: #fed136; }
+  opacity: 0.6; }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #fec503; }
+  opacity: 1;
+   }
 
 /*h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -157,9 +159,11 @@ a.active {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
+    opacity:0.6;
     color: white; }
     .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
-      color: #0CD9A8;
+      opacity: 1;
+      color: #fff;
       outline: none; }
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 0;
@@ -288,7 +292,7 @@ header {
   align-items: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 20px;
   color: #C7C7C7; }
 
 .syllabus {
@@ -947,9 +951,8 @@ body {
   text-align: right;
   font-size: 0; }
   .footer-bar .logo {
-    opacity: 0.6;
-    margin: auto;
-    width: 100px; }
+    opacity: 1;
+    margin: auto; }
 
 .footer-tab {
   display: inline-block;
@@ -1109,7 +1112,7 @@ right: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px
-  color: #666;
+  color: #999;
 }
 
 .ta{

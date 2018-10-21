@@ -19,16 +19,17 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  outline: none; }
+  outline: none;
+  text-decoration: none; }
 
 a {
-  color: #fed136; }
+  opacity: 0.6; }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #fec503; }
+  opacity: 1 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -903,9 +904,8 @@ body {
   text-align: right;
   font-size: 0; }
   .footer-bar .logo {
-    opacity: 0.6;
-    margin: auto;
-    width: 100px; }
+    opacity: 1;
+    margin: auto; }
 
 .footer-tab {
   display: inline-block;
