@@ -194,12 +194,11 @@ a.active {
     .navbar-custom.affix .navbar-brand {
       font-size: 1.5em; } }
 header {
-   /* background-repeat: no-repeat;
+   background-repeat: no-repeat;
    background-attachment: scroll;
    background-position: center center;
-   @include background-cover;*/
     background: linear-gradient(203.49deg, #00F0FF 0.97%, rgba(0, 159, 121, 0) 90.31%), #FFC020;
-    mix-blend-mode: normal, normal, none;
+    mix-blend-mode: normal, normal;
     opacity: 0.8, 0.94;
 
   text-align: center;
