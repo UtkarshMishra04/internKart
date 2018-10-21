@@ -1,9 +1,27 @@
+/* Google Icon Font */
+@import "http://fonts.googleapis.com/icon?family=Material+Icons";
+@import "http://fonts.googleapis.com/icon?family=Material+Icons";
+@import "http://propeller.in/components/icons/css/google-icons.css";
+
+/* Propeller typography */
+@import "http://propeller.in/components/typography/css/typography.css";
+
+/* Propeller icons */
+@import "http://fonts.googleapis.com/icon?family=Material+Icons";
+@import "http://propeller.in/components/icons/css/google-icons.css";
+
+/* Propeller button */
+@import "http://propeller.in/components/button/css/button.css";
+
+/* Propeller accordion */
+@import "http://propeller.in/components/accordion/css/accordion.css";
+
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .text-muted {
-  color: #777777; }
+ }
 
 .text-primary {
   color: #fed136; }
@@ -31,13 +49,13 @@ a:active,
 a.active {
   color: #fec503; }
 
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700; }
+  font-weight: 700; }*/
 
 .img-centered {
-  margin: 0 auto; }
+  margin:auto; }
 
 .bg-light-gray {
   background-color: #eeeeee; }
@@ -113,9 +131,10 @@ h1, h2, h3, h4, h5, h6 {
     background-color: white; }
 
 .navbar-custom {
-  background: linear-gradient(203.49deg, #00F0FF 0.97%, rgba(0, 159, 121, 0) 90.31%), #FFC020;
+  /*background: linear-gradient(203.49deg, #00F0FF 0.97%, rgba(0, 159, 121, 0) 90.31%), #FFC020;
     mix-blend-mode: normal, normal;
-    opacity: 0.8, 0,94;
+    opacity: 0.8, 0.94;*/
+    background: #01c193;
   border-color: transparent; }
   .navbar-custom .navbar-brand {
     color:#0CD9A8;
@@ -170,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-custom.affix {
    background: linear-gradient(203.49deg, #00F0FF 0.97%, rgba(0, 159, 121, 0) 90.31%), #FFC020;
     mix-blend-mode: normal, normal;
-    opacity: 0.8, 0,94;
+    opacity: 0.8, 0.94;
     padding: 10px 0; }
     .navbar-custom.affix .navbar-brand {
       font-size: 1.5em; } }
@@ -180,55 +199,70 @@ header {
    background-position: center center;
    @include background-cover;*/
     background: linear-gradient(203.49deg, #00F0FF 0.97%, rgba(0, 159, 121, 0) 90.31%), #FFC020;
-    mix-blend-mode: normal, normal;
-    opacity: 0.8, 0,94;
+    mix-blend-mode: normal, normal, none;
+    opacity: 0.8, 0.94;
 
   text-align: center;
   color: white; }
   header .intro-text {
-    padding-top: 80px;
-    padding-bottom: 30px; }
-    header .intro-text .intro-lead-in {
-      font-family: Roboto;
-      font-style: medium;
-      font-size: 24px;
-      line-height: 28px;
-      margin-bottom: 25px; }
+     }
+    header .intro-text .intro-lead .banner-subtitle{
+      font-family:"Lato",serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 50px;
+     
+       }
     header .intro-text .intro-heading {
-      font-family: Roboto;
-      font-style: bold;
-      font-size: 40px;
-      line-height: 47px;
-      margin-bottom: 25px; }
+      font-family: "Lato",serif;
+      font-weight: 600;
+      letter-spacing: 3.3px;
+      font-size: 38px;
+      margin-top: 200px;
+      margin-bottom: 25px;}
   header .foot-intro {
-    padding-top: 80px;
-    padding-bottom: 50px; }
+    font-family:"Lato",serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    margin-top: 100px;
+    margin-bottom: 35px;
+     }
 
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 200px;
-    padding-bottom: 100px; }
-    header .intro-text .intro-lead-in {
-      font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-style: italic;
-      font-size: 40px;
-      line-height: 40px;
-      margin-bottom: 25px; }
+     }
+    header .intro-text .intro-lead .banner-subtitle {
+     font-family:"Lato",serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 50px;
+     
+       }
     header .intro-text .intro-heading {
-      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Montserrat", sans-serif;
       text-transform: uppercase;
-      font-weight: 700;
-      font-size: 75px;
-      line-height: 75px;
-      margin-bottom: 50px; }
+      font-weight: 600;
+      font-size: 38px;
+      letter-spacing: 3.3px;
+      margin-top: 200px;
+      margin-bottom: 25px;
+      }
   header .foot-intro {
-    padding-top: 80px;
-    padding-bottom: 50px; } }
+    font-family:"Lato",serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    margin-top: 100px;
+    margin-bottom: 35px;
+    } }
 .univ {
   background-color: #f9f9f9;
   opacity: 94%;
   background-blend-mode: normal;
-  height: 92px;
+  height: auto;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -236,10 +270,10 @@ header {
   justify-content: center;
   align-items: center; }
 
+
 .univrow {
-  width: 60%;
-  height: 60%;
-  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -253,15 +287,13 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
   color: #C7C7C7; }
 
 .syllabus {
-  padding: 100px 0 70px; }
+  padding: 0 0 70px; }
   .syllabus .title {
     color: #333;
     text-align: center;
@@ -283,7 +315,7 @@ header {
     font-size: 20px;
     line-height: 30px;
     max-width: 660px;
-    margin: 40px auto; }
+    margin: 0 auto; }
   .syllabus ul {
     max-width: 800px;
     list-style: none;
@@ -345,25 +377,51 @@ i.circle {
   line-height: 24px;
   margin: 10px 0 40px 174px; }
 
+.service-subheading{
+  font-family: "Lato",sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #999;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.service-heading{
+  font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    letter-spacing: 0.2px;
+    color: #000000;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
 section {
   padding: 100px 0; }
   section h2.section-heading {
-    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #000000;
     margin-top: 0;
-    margin-bottom: 15px; }
+    margin-bottom: 20px; }
   section h3.section-subheading {
-    width: 60%;
+    max-width: 660px;
     margin: auto;
-    font-size: 16px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-family: "Lato",sans-serif;
     text-transform: none;
-    font-style: italic;
     font-weight: 400;
-    margin-bottom: 75px; }
+    color: #999;
+    line-height: 30px;
+    margin-bottom: 50px; }
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0; } }
+    padding: 100px 0; } }
 .service-heading {
   margin: 15px 0;
   text-transform: none; }
@@ -822,7 +880,7 @@ body {
 .pricing {
   background: linear-gradient(203.49deg, #00F0FF 0.97%, rgba(0, 159, 121, 0) 90.31%), #FFC020;
     mix-blend-mode: normal, normal;
-    opacity: 0.8, 0,94;
+    opacity: 0.8, 0.94;
   padding: 100px 0; }
   .pricing .footnote {
     font-size: 18px;
@@ -871,7 +929,7 @@ body {
 
 .points-content {
   background: #fff;
-  padding: 38px 0;
+  padding: 20px 0;
   border-radius: 0 0 15px 15px; }
 
 .footer {
@@ -879,7 +937,7 @@ body {
   text-align: center;
   background: linear-gradient(203.49deg, #00F0FF 0.97%, rgba(0, 159, 121, 0) 90.31%), #FFC020;
     mix-blend-mode: normal, normal;
-    opacity: 0.8, 0,94;
+    opacity: 0.8, 0.94;
      }
 
 .footer-bar {
@@ -1037,4 +1095,55 @@ margin: 20px;
 right: 0;
 }
 }
+}
+
+.qa{
+  font-family: "Lato",sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #333;
+}
+
+.qb{
+
+  font-family: "Lato",sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px
+  color: #666;
+}
+
+.ta{
+  font-family: "Lato",sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #333;
+  letter-spacing: 0.2px;
+  line-height: 35px
+}
+
+.tb{
+  font-family: "Lato",sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px
+  color: #FFD037;
+
+}
+
+.tc{
+font-family: "Lato",sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #666;
+  line-height: 19px;
+  margin: 10px;
+
+}
+
+.fc{
+  font-family: "Lato",sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
 }

@@ -52,8 +52,6 @@
     <!-- Theme CSS -->
     <link href="./assets/main.css" rel="stylesheet">
 
-    <link href="./assets/question/css/style.css" rel="stylesheet">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]-->
@@ -95,7 +93,7 @@
                 <li>
                     <a href="#">Blog</a>
                 </li>
-                <li>
+                <!--li>
                     <a class="page-scroll" href="./about.html">About</a>
                 </li>
                  <li>
@@ -106,7 +104,26 @@
                 </li>
                 <li>
                     <a class="page-scroll" href="#advisors">Our Advisors</a>
-                </li>
+                </li-->
+                <!--li class="dropdown">
+                  <a id="dropdownMenuButton" data-toggle="dropdown">About <i class="fa fa-angle-down"></i></a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="page-scroll dropdown-item" href="#overview" style="color: #FFC020">Overview</a>
+                    <a class="page-scroll dropdown-item" href="#fellow" style="color: #FFC020">Fellow Stories</a>
+                    <a class="page-scroll dropdown-item" href="./about.html" style="color: #FFC020">About</a>
+                    <a class="page-scroll dropdown-item" href="#advisors" style="color: #FFC020">Our Advisors</a>
+                  </div>
+                </li-->
+                <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a class="page-scroll dropdown-item" href="#overview" style="color: #FFC020">Overview</a></li>
+                <li><a class="page-scroll dropdown-item" href="#fellow" style="color: #FFC020">Fellow Stories</a></li>
+                <li><a class="page-scroll dropdown-item" href="./about.html" style="color: #FFC020">About Us</a></li>
+                <li><a class="page-scroll dropdown-item" href="#advisors" style="color: #FFC020">Our Advisors</a></li>
+                <li><a class="page-scroll dropdown-item" href="#" style="color: #FFC020">Careers</a></li>
+              </ul>
+            </li>
                 <li>
                     <a class="page-scroll" href="#help">Help</a>
                 </li>
@@ -124,15 +141,15 @@
 <!-- Hero -->
 <!-- Header -->
 <header>
-    <div class="container" style="height: 700px;">
+    <div class="container" style="height: auto">
         <div class="intro-text">
-        	<div class="intro-heading" style="font-family: Roboto;font-style: normal;font-weight: bold;line-height: normal;font-size: 40px;">Land Your Dream Research Internship</div>
-            <div class="intro-lead-in" style="font-family: Roboto;font-style: normal;font-weight: 500;line-height: normal;font-size: 24px;color: #FFFFFF;">A career accelerator for students and young professionals that’s free until you’re hired</div> 
+        	<div class="intro-heading">Land Your Dream Research Internship</div>
+            <div class="intro-lead"><div class="banner-subtitle">A career accelerator for students and young professionals that's <b>free until you're hired</b></div></div> 
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScTq2pccvQqkbzmPzk7nMSbIHz-oby432RFSUZuoKctz93Npw/viewform"><button class="apply-button" style="margin: 2%">Get Started</button></a>           
             <a href="#services" class="page-scroll" style="margin: 2%;font-family: Roboto;font-style: normal;font-weight: bold;line-height: normal;font-size: 16px;color: #FFFFFF;">Learn More &nbsp<i class="fa fa-angle-down"></i></a>
         </div>
-        <div class="foot-intro">
-        	Limited capacity in the next cohort of fellows. Sign Up early to avoid waitlist.
+        <div class="foot-intro" style="color: rgba(255, 255, 255, 0.5)">
+        	Limited capacity in the next cohort of fellows. <a style="font-style: normal;color: #fff;cursor:pointer;"><b>Sign Up early</b></a> to avoid waitlist.
         </div>
     </div>
     <aside class="univ">
@@ -152,17 +169,17 @@
         
       </div-->
 
-      <div class="col-md-3 col-sm-6 colstyle" style="font-family: Roboto;font-size: 20px; line-height: 23px">
+      <div class="colstyle" style="font-family: Roboto;font-size: 20px; line-height: 23px">
                Our Fellows Work At:
             </div>
-            <div class="col-md-3 col-sm-6">
-                <img src="./assets/img/logos/mit.svg" style="height: 60px">
+            <div class="col-md-3 col-sm-4">
+                <img src="./assets/img/logos/mit.svg" style="max-height:60px;max-width: 100%">
             </div>
-            <div class="col-md-3 col-sm-6">
-                <img src="./assets/img/logos/tsinghua.jpg" style="height: 60px">
+            <div class="col-md-3 col-sm-4">
+                <img src="./assets/img/img/tsinghua.png" style="max-height:60px;max-width: 100%">
             </div>
-            <div class="col-md-3 col-sm-6">
-                <img src="./assets/img/logos/purdue.jpg" style="height: 60px">
+            <div class="col-md-3 col-sm-4">
+                <img src="./assets/img/img/purdue.png" style="max-height:60px;max-width: 100%">
             </div>
          
       
@@ -174,42 +191,33 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading" style="font-family: Roboto;font-style: normal;font-weight: 500;line-height: normal;font-size: 30px;text-transform: uppercase;color: #000000;">What is INSTAKART?</h2>
-                <h3 class="section-subheading text-muted" style="font-family: Roboto;font-style: normal;font-weight: normal;line-height: normal;font-size: 20px;text-align: center;color: rgba(0, 0, 0, 0.6);"> Internkart (erstwhile Star Apping) is the only platform in the world that connects research aspirants to Professors/Researchers looking to hire interns/ Research Assistants. The process ensures each of our clients gets a chance to research in top-notch institutes in the desired area of interest.</h3>
+                <h2 class="section-heading">What is INTERNKART?</h2>
+                <h3 class="section-subheading text-muted"> InternKart is driven by its mission to make the field of research more accessible to every student. Its smart matchmaking algorithm is inspired to make research internships a level-playing field for everyone. InternKart’s unique offering has 3-key selling points–</h3>
             </div>
         </div>
         <div class="row text-center">
             <div class="col-md-4">
                 <span >
-                   <img src="./assets/img/svg/learnfrombest.svg"/>
+                   <img src="./assets/img/svg/learnfrombest.svg" style="max-width: 270px;max-height: 190px" />
                 </span>
-                <h4 class="service-heading" style="font-family: Roboto;font-style: normal;font-weight: 500;line-height: normal;font-size: 24px;
-color: #000000;">Learn From the Best</h4>
-                <p class="text-muted" style="font-family: Roboto;font-style: normal;font-weight: normal;line-height: normal;font-size: 20px;text-align: center;color: rgba(0, 0, 0, 0.6);">We've brought together only the best
-advisors from top universities,
-big and small.</p>
+                <h4 class="service-heading">For Students</h4>
+                <p class="text-muted service-subheading">Students have an opportunity to land their dream research project, and shape their careers, through a seamless application process. Prior CV-making, mailing experience is absolutely not required</p>
             </div>
 
             <div class="col-md-4">
                 <span>
-                   <img src="./assets/img/svg/time.svg"/>
+                   <img src="./assets/img/svg/time.svg"  style="max-width: 270px;max-height: 190px"/>
                 </span>
-                <h4 class="service-heading" style="font-family: Roboto;font-style: normal;font-weight: 500;line-height: normal;font-size: 24px;
-color: #000000;">Anywhere and Anytime</h4>
-                <p class="text-muted" style="font-family: Roboto;font-style: normal;font-weight: normal;line-height: normal;font-size: 20px;text-align: center;color: rgba(0, 0, 0, 0.6);">Learn online with live video sessions
-tailored to suit your schedule, including
-unlimited support whenever you want.</p>
+                <h4 class="service-heading">For Faculty</h4>
+                <p class="text-muted service-subheading">Professors benefit from access to a bigger talent pool with relevant experience and skills needed for successful execution of their projects</p>
             </div>
 
             <div class="col-md-4">
                 <span>
-                   <img src="./assets/img/svg/personal.svg"/>
+                   <img src="./assets/img/svg/personal.svg"  style="max-width: 270px;max-height: 190px"/>
                 </span>
-                <h4 class="service-heading" style="font-family: Roboto;font-style: normal;font-weight: 500;line-height: normal;font-size: 24px;
-color: #000000;">1-on-1 Personalization</h4>
-                <p class="text-muted" style="font-family: Roboto;font-style: normal;font-weight: normal;line-height: normal;font-size: 20px;text-align: center;color: rgba(0, 0, 0, 0.6);">Have 1-on-1s and small groups with
-your advisor, who works with you
-face-to-face every week until you get hired.</p>
+                <h4 class="service-heading">For the field of research</h4>
+                <p class="text-muted service-subheading">Greater participation of stakeholders, professors and students, across a plethora of fields will eventually lead to human progress</p>
             </div>
         </div>
     </div>
@@ -254,7 +262,7 @@ face-to-face every week until you get hired.</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/BWpasqVhXjA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
-        <div class="testimonial-column">
+        <!--div class="testimonial-column">
           <div class="testimonial">
             <img class="testimonial-logo" src="./assets/img/logos//tsinghua.jpg" alt="Logo of Google"/>
             <img class="testimonial-img" src="./assets/img/img/rushi.jpg" alt="Profile picture of Pathrise alumnus"/>
@@ -279,6 +287,48 @@ face-to-face every week until you get hired.</p>
               <p>&ldquo;I am a student at IIT Roorkee. I did internship in Tsinghua University, China this summer in division of logistics. I got a great exposure there. I gained knowledge and came to know about many things which I may not get in India. There are no logistics division in IITs and so no one is introduced to such topics. This is just an example. After working on the project and learning about logistics, I have now decided to study further. If I would not have done this internship I may not take the same decision. Now, for student other than IITians or NITians, if you are facing problem finding foreign internships, you can apply through STAR APPING. It is a start-up and came to know about it through my senior. They send your application through mail to professors all around the world according to your area of interest. Then you can continue mailing responses and they guarantee for your internship. I think its a very good platform as we can not reach to many professors around the world. Here is the website &rdquo;</p>
             </div>
           </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            
+          </div>       
+        </div-->
+        <div class="row text-center" style="margin-top: 100px">
+            <div class="col-md-6">
+                <div class="row">
+                  <img src="./assets/img/img/tsinghua.png" style="max-height:43px;max-width: 200px;float: left;margin:20px">
+                </div>
+                <div class="row">
+                <span class="col-md-4">
+                   <img src="./assets/img/svg/time.svg"  style="max-width: 140px;max-height: 120px"/>
+                </span>
+                <h4 class="service-heading class="col-md-8" style="float: left;"><div class="ta" style="float: left">Rushi Patel</div><br/><div class="tb" style="float: left">Research Scholar</div></h4>
+              </div>
+                <p class="row text-muted service-subheading tc" style="margin:30px">&ldquo;I am a student at IIT Roorkee. I did internship in Tsinghua University, China this summer in division of logistics. I got a great exposure there. I gained knowledge and came to know about many things which I may not get in India. There are no logistics division in IITs and so no one is introduced to such topics. This is just an example. After working on the project and learning about logistics, I have now decided to study further. If I would not have done this internship I may not take the same decision. Now, for student other than IITians or NITians, if you are facing problem finding foreign internships, you can apply through STAR APPING. It is a start-up and came to know about it through my senior. They send your application through mail to professors all around the world according to your area of interest. Then you can continue mailing responses and they guarantee for your internship. I think its a very good platform as we can not reach to many professors around the world. Here is the website &rdquo;</p>
+            </div>
+
+            <div class="col-md-6">
+              <div class="row">
+                  <img src="./assets/img/img/tsinghua.png" style="max-height:43px;max-width: 200px;float: left;margin:20px">
+                </div>
+                <div class="row">
+                <span class="col-md-4">
+                   <img src="./assets/img/svg/time.svg"  style="max-width: 140px;max-height: 120px"/>
+                </span>
+                <h4 class="service-heading class="col-md-8" style="float: left;"><div class="ta" style="float: left">Rishav Sapahia </div><br/><div class="tb" style="float: left">Research Scholar</div></h4>
+              </div>
+                <p class="row text-muted service-subheading tc" style="margin:30px">&ldquo;When in college,I decided to apply for foreign internship, most of my target were already famous programs like ISI-USC,CERN,IST Austria, I applied to all of them in my 2nd and 3rd year and you know ,in how many I managed to get into?<br/>Drumrolls……..<br/>“ZERO “.<br/>Yes,I couldn’t manage to get into any of the them,<br/>Why?<br/>
+
+Because these are already highly famous internship programs ,Many students throughout the world apply to them which makes the competitions tougher .There are plenty of students competing for it.<br/>
+
+Which leaves applying to internships manually by looking for profiles of professors and then applying to them, which all boils down to a matter of luck as number of profiles you could send manually is a limited amount so chances of your profile landing up at place which have a requirement too ,is quite minimal.<br/>
+
+Then ,I came to know about this startup called InternKart. On looking at first, it seems a bit unreliable as how one can assure you foreign internship with this much confidence, I was a bit reluctant at first but then I decided to take a leap of faith and Guess what….<br/>
+
+Their product works damn right. I got many internship offers, research collaboration offers from various places, IMHO, InternKart is a great platform for foreign internships and even to build contacts, it works damn right .<br/>
+
+Being at right place at right time is what makes all the difference everywhere and InternKart makes sure that your profile is at most of the places everywhere. 
+&rdquo;</p>
         </div>
       </div>
     </section>
@@ -287,27 +337,27 @@ face-to-face every week until you get hired.</p>
      <p class="title">OUR ADVISORS</p>
       <p class="subtitle">Our advisors come from leading Universities</p>
     <div class="container">
-        <div class="row">
+        <div class="row univrow">
 
           
             <div class="col-md-3 col-sm-6">
                 <a href="#" target="_blank">
-                    <img src="./assets/img/logos/planck.jpg" class="img-responsive img-centered" alt="advisors" style="height: 140px">
+                    <img src="./assets/img/img/planck.png" class="img-responsive img-centered" alt="advisors" style="max-height: 140px;max-width: 100%">
                 </a>
             </div>
             <div class="col-md-3 col-sm-6">
                 <a href="#" target="_blank">
-                    <img src="./assets/img/logos/purdue.jpg" class="img-responsive img-centered" alt="advisors" style="height: 140px">
+                    <img src="./assets/img/img/purdue.png" class="img-responsive img-centered" alt="advisors" style="max-height: 140px;max-width: 100%">
                 </a>
             </div>
             <div class="col-md-3 col-sm-6">
                 <a href="#" target="_blank">
-                    <img src="./assets/img/logos/mit.svg" class="img-responsive img-centered" alt="advisors" style="height: 140px">
+                    <img src="./assets/img/logos/mit.svg" class="img-responsive img-centered" alt="advisors" style="max-height: 140px;max-width: 100%">
                 </a>
             </div>
             <div class="col-md-3 col-sm-6">
                 <a href="#" target="_blank">
-                    <img src="./assets/img/logos/tsinghua.jpg" class="img-responsive img-centered" alt="advisors" style="height: 140px">
+                    <img src="./assets/img/img/tsinghua.png" class="img-responsive img-centered" alt="advisors" style="max-height: 140px;max-width: 100%">
                 </a>
             </div>
          
@@ -368,98 +418,57 @@ face-to-face every week until you get hired.</p>
      <p class="title">TOP QUESTIONS</p>
       
     <div class="container" style="align-items: center;">
-      <div class="faq"> 
-<div class="toggle">
-  <div class="toggle-title ">
-    <h3>
-    <i></i>
-    <span class="title-name" style="font-family: Roboto;font-style: normal;font-weight: 500;line-height: normal;font-size: 24px;color: #000000;">Why Instakart ?</span>
-    </h3>
+<div class="panel-group pmd-accordion pmd-accordion-inbox" id="accordion6" role="tablist" aria-multiselectable="true" > 
+  <div class="panel panel-default" style="margin: 20px"> 
+    <div class="panel-heading" role="tab" id="headingOne" style="background-color: #fff">
+      <h4 class="panel-title"> <a class="qa" data-toggle="collapse" data-parent="#accordion6" href="#collapseOne6" aria-expanded="true" aria-controls="collapseOne6" data-expandable="false" style="color: #000;"> Why Instakart ? <i class="material-icons md-dark pmd-sm pmd-accordion-arrow"></i></a> </h4>
+    </div>
+    <div id="collapseOne6" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body"><p class="qb">When it comes to the tedious task of searching for research internships, a lot of students ends up killing time cold emailing to the professors with only negative or no response in the end. International Internship programs like MITACS, DAAD etc are extremely competitive with fewer seats. Internkart Automates the entire process of connecting you and the professor so instead of wasting time cold emailing for an internship you can rather use it to acquire the domain knowledge for your upcoming international internship.</p></div>
+    </div>
   </div>
-  <div class="toggle-inner">
-    <p style="font-family: Roboto;font-style: normal;font-weight: normal;line-height: 31px;font-size: 18px;color: #000000;">When it comes to the tedious task of searching for research internships, a lot of students ends up killing time cold emailing to the professors with only negative or no response in the end. International Internship programs like MITACS, DAAD etc are extremely competitive with fewer seats. Internkart Automates the entire process of connecting you and the professor so instead of wasting time cold emailing for an internship you can rather use it to acquire the domain knowledge for your upcoming international internship.</p>
+  <div class="panel panel-default" style="margin: 20px" > 
+    <div class="panel-heading" role="tab" id="headingTwo" style="background-color: #fff">
+      <h4 class="panel-title"> <a class="qa" data-toggle="collapse" data-parent="#accordion6" href="#collapseTwo6" aria-expanded="false" aria-controls="collapseTwo6"  data-expandable="false" style="color: #000;"> How does it works? <i class="material-icons md-dark pmd-sm pmd-accordion-arrow"></i></a> </h4>
+    </div>
+    <div id="collapseTwo6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body"><p class="qb">We take your CV, Cover letter and 5 area of interest via email. We automate the process of connecting you and the professors who are into high-quality research in your preferred area of interests thus enabling you to secure internship offer letter. </p></div>
+    </div>
   </div>
-  </div><!-- END OF TOGGLE -->
-  
-  
-  <div class="toggle">
-    <div class="toggle-title ">
-      <h3>
-      <i></i>
-      <span class="title-name" style="font-family: Roboto;font-style: normal;font-weight: 500;line-height: normal;font-size: 24px;color: #000000;">How does it works?</span>
-      </h3>
+  <div class="panel panel-default" style="margin: 20px"> 
+    <div class="panel-heading" role="tab" id="headingThree" style="background-color: #fff">
+      <h4 class="panel-title"> <a class="qa" data-toggle="collapse" data-parent="#accordion6" href="#collapseThree6" aria-expanded="false" aria-controls="collapseThree6"  data-expandable="false" style="color: #000;"> What documents/details do we need from you? <i class="material-icons md-dark pmd-sm pmd-accordion-arrow"></i></a> </h4>
     </div>
-    
-    <div class="toggle-inner">
-       <p style="font-family: Roboto;font-style: normal;font-weight: normal;line-height: 31px;font-size: 18px;color: #000000;">We take your CV, Cover letter and 5 area of interest via email. We automate the process of connecting you and the professors who are into high-quality research in your preferred area of interests thus enabling you to secure internship offer letter.</p>
+    <div id="collapseThree6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body"><p class="qb">CV( Mention your research projects if you have any)(Sample Link) , Cover letter. (Sample Link) , 3 Area of Interest</p> </div>
     </div>
-    </div><!-- END OF TOGGLE -->
-    
-    <div class="toggle">
-      <div class="toggle-title  ">
-        <h3>
-        <i></i>
-        <span class="title-name" style="font-family: Roboto;font-style: normal;font-weight: 500;line-height: normal;font-size: 24px;color: #000000;">What documents/details do we need from you?</span>
-        </h3>
-      </div>
-      
-      <div class="toggle-inner">
-        <p style="font-family: Roboto;font-style: normal;font-weight: normal;line-height: 31px;font-size: 18px;color: #000000;">CV( Mention your research projects if you have any)(Sample Link) , Cover letter. (Sample Link) , 3 Area of Interest</p>
-      </div>
-      
-      </div><!-- END OF TOGGLE -->
-      
-  
-  
-    <div class="toggle">
-      <div class="toggle-title  ">
-        <h3>
-        <i></i>
-        <span class="title-name" style="font-family: Roboto;font-style: normal;font-weight: 500;line-height: normal;font-size: 24px;color: #000000;"> What are the universities/ Professors that we send your applications to?</span>
-        </h3>
-      </div>
-      
-      <div class="toggle-inner">
-         <p style="font-family: Roboto;font-style: normal;font-weight: normal;line-height: 31px;font-size: 18px;color: #000000;">We usually send your emails to researchers with high-quality research publications usually coming from top universities. Some of our best students have received offer letters from MIT, Tsinghua, Purdue, Kuka Robotics and many other top research Institutes.</p>
-      </div>
-      
-      </div><!-- END OF TOGGLE -->
-      
-  
-  
-    <div class="toggle">
-      <div class="toggle-title ">
-        <h3>
-        <i></i>
-        <span class="title-name" style="font-family: Roboto;font-style: normal;font-weight: 500;line-height: normal;font-size: 24px;color: #000000;"> How much fee do we charge?</span>
-        </h3>
-      </div>
-      
-      <div class="toggle-inner">
-         <p style="font-family: Roboto;font-style: normal;font-weight: normal;line-height: 31px;font-size: 18px;color: #000000;">Usually depends on a profile to profile basis. The better your profile the less we charge. Rest be assured it will be the best investment of your life.</p>
-      </div>
-      
-      </div><!-- END OF TOGGLE -->
-      
-  
-  
-  
-    <div class="toggle">
-      <div class="toggle-title ">
-        <h3>
-        <i></i>
-        <span class="title-name" style="font-family: Roboto;font-style: normal;font-weight: 500;line-height: normal;font-size: 24px;color: #000000;">What if we don't get an internship?</span>
-        </h3>
-      </div>
-      
-      <div class="toggle-inner">
-         <p style="font-family: Roboto;font-style: normal;font-weight: normal;line-height: 31px;font-size: 18px;color: #000000;">We refund the 100% amount in case we are unable to secure you an internship offer letter.</p>
-      </div>
-      
-      </div><!-- END OF TOGGLE -->
-  
-  
+  </div>
+  <div class="panel panel-default" style="margin: 20px"> 
+    <div class="panel-heading" role="tab" id="headingFour" style="background-color: #fff">
+      <h4 class="panel-title"> <a class="qa" data-toggle="collapse" data-parent="#accordion6" href="#collapseFour6" aria-expanded="false" aria-controls="collapseFour6"  data-expandable="false" style="color: #000;"> What are the universities/ Professors that we send your applications to? <i class="material-icons md-dark pmd-sm pmd-accordion-arrow"></i></a> </h4>
     </div>
+    <div id="collapseFour6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body"><p class="qb">We usually send your emails to researchers with high-quality research publications usually coming from top universities. Some of our best students have received offer letters from MIT, Tsinghua, Purdue, Kuka Robotics and many other top research Institutes. </p></div>
+    </div>
+  </div>
+  <div class="panel panel-default" style="margin: 20px"> 
+    <div class="panel-heading" role="tab" id="headingFive" style="background-color: #fff">
+      <h4 class="panel-title"> <a class="qa" data-toggle="collapse" data-parent="#accordion6" href="#collapseFive6" aria-expanded="false" aria-controls="collapseFive6"  data-expandable="false" style="color: #000;"> How much fee do we charge?<i class="material-icons md-dark pmd-sm pmd-accordion-arrow"></i></a> </h4>
+    </div>
+    <div id="collapseFive6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body"><p class="qb">Usually depends on a profile to profile basis. The better your profile the less we charge. Rest be assured it will be the best investment of your life. </p></div>
+    </div>
+  </div>
+  <div class="panel panel-default" style="margin: 20px"> 
+    <div class="panel-heading" role="tab" id="headingSix" style="background-color: #fff">
+      <h4 class="panel-title"> <a class="qa" data-toggle="collapse" data-parent="#accordion6" href="#collapseSix6" aria-expanded="false" aria-controls="collapseSix6"  data-expandable="false"> What if we don't get an internship? <i class="material-icons md-dark pmd-sm pmd-accordion-arrow"></i></a> </h4>
+    </div>
+    <div id="collapseSix6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+      <div class="panel-body"><p class="qb">We refund the 100% amount in case we are unable to secure you an internship offer letter.</p> </div>
+    </div>
+  </div>
+</div> <!-- Inbox like Accordion end-->
+   
   </div>
 </section>
 
@@ -468,7 +477,7 @@ face-to-face every week until you get hired.</p>
 <footer class="footer">
     <div class="container">
         <div class="apply-form">
-        <span>Land Your Dream Internship</span><a href="https://docs.google.com/forms/d/e/1FAIpQLScTq2pccvQqkbzmPzk7nMSbIHz-oby432RFSUZuoKctz93Npw/viewform"><button class="apply-button">Get Started</button></a>
+        <span class="fc">Land Your Dream Internship</span><a href="https://docs.google.com/forms/d/e/1FAIpQLScTq2pccvQqkbzmPzk7nMSbIHz-oby432RFSUZuoKctz93Npw/viewform"><button class="apply-button">Get Started</button></a>
       </div>
         <!--div class="row">
             <div class="col-md-4">
@@ -494,16 +503,18 @@ face-to-face every week until you get hired.</p>
             </div>
         </div-->
          <div class="footer-bar">
+          <div style="float: left;">
         <a href="/"><img class="logo" src="./assets/img/svg/logo.svg" alt="Logo of the company InternKart"/></a>
-        <a class="footer-tab left" href="#" style="color: #fff">BLOG</a>
-        <a class="footer-tab left" href="tel: +91-8217590576" style="color: #fff">HELP</a>
-        <a class="footer-tab left" href="https://docs.google.com/forms/d/e/1FAIpQLScTq2pccvQqkbzmPzk7nMSbIHz-oby432RFSUZuoKctz93Npw/viewform" style="color: #fff">GET STARTED</a>
+        <a class="footer-tab" href="#" style="color: #fff">BLOG</a>
+        <a class="footer-tab " href="tel: +91-8217590576" style="color: #fff">HELP</a>
+        <a class="footer-tab " href="https://docs.google.com/forms/d/e/1FAIpQLScTq2pccvQqkbzmPzk7nMSbIHz-oby432RFSUZuoKctz93Npw/viewform" style="color: #fff">GET STARTED</a></div>
+        <div style="float: right;">
         <a class="footer-tab" href="#" style="color: #fff">TERMS</a>
         <a class="footer-tab" href="#" style="color: #fff">PRIVACY</a>
         <a href=" https://www.facebook.com/appingstar/" target="_blank" class="footer-tab"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <a href="" target="_blank" class="footer-tab"><i class="fa fa-twitter" aria-hidden="true"></i></a>
         <a href="" target="_blank" class="footer-tab"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <span class="footer-tab copyright">&copy; COPYRIGHT 2018 InternKart</span>
+        <span class="footer-tab copyright">&copy; COPYRIGHT 2018 InternKart</span></div>
       </div>
     </div>
 </footer>
@@ -515,12 +526,26 @@ face-to-face every week until you get hired.</p>
 <!-- Bootstrap Core JavaScript -->
 <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
 
+<!-- Propeller Global js --> 
+<script src="http://propeller.in/components/global/js/global.js"></script>
+
+<!-- Propeller accordion js -->
+<script type="text/javascript" src="http://propeller.in/components/accordion/js/accordion.js"></script>
+
+
 <!-- Plugin JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<script>
+    $(function() {
+        $('.beefup').beefup();
+    });
+</script>
 
 <!-- Contact Form JavaScript -->
 <script src="./assets/js/jqBootstrapValidation.js"></script>
 <script src="./assets/js/contact_me.js"></script>
+
 
 <!-- Theme JavaScript -->
 <script src="./assets/js/agency.js"></script>
@@ -534,16 +559,11 @@ face-to-face every week until you get hired.</p>
 <script src="./assets/question/js/modernizr.js"></script>
 
 <script type="text/javascript">
-  if( jQuery(".toggle .toggle-title").hasClass('active') ){
-    jQuery(".toggle .toggle-title.active").closest('.toggle').find('.toggle-inner').show();
-  }
-  jQuery(".toggle .toggle-title").click(function(){
-    if( jQuery(this).hasClass('active') ){
-      jQuery(this).removeClass("active").closest('.toggle').find('.toggle-inner').slideUp(200);
-    }
-    else{ jQuery(this).addClass("active").closest('.toggle').find('.toggle-inner').slideDown(200);
-    }
-  });
+  $('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
 </script>
 
 </body>
